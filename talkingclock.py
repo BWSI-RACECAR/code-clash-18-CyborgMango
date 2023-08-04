@@ -40,7 +40,7 @@ class Solution:
             ampm=" am"
             hour=int(hour)
         hourL=["one ","two ","three ","four ","five ","six ","seven ","eight ","nine ","ten ","eleven ","twelve "]
-        min1L=["oh","one ","two ","three ","four ","five "]
+        min1L=["oh"," ","twenty ","thirty ","forty ","fifty "]
         min2L=["","one ","two ","three ","four ","five ","six ","seven ","eight ","nine "]
         min2teenL=["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"]
         if min1=='0':

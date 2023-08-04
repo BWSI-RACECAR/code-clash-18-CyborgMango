@@ -45,11 +45,11 @@ class Solution:
         if min1=='0':
             if min2=='0':
                 mins=''
-            mins="oh "+min2L[min2]
+            mins="oh "+min2L[int(min2)]
         elif min1=='1':
-            mins=min2teenL[min2]
+            mins=min2teenL[int(min2)]
         else:
-            mins=min1L[min1]+min2L[min2]
+            mins=min1L[int(min1)]+min2L[int(min2)]
         print("It's "+str(hour)+str(mins)+ampm)
             #type input_time: string
             #return type: string

@@ -33,7 +33,7 @@ class Solution:
         hour= input_time[0:2]
         min1=input_time[3]
         min2=input_time[4]
-        if int(hour)>12:
+        if int(hour)>=12:
             ampm=" pm"
         else:
             ampm=" am"
@@ -55,7 +55,10 @@ class Solution:
             mins=min2teenL[int(min2)]
         else:
             mins=min1L[int(min1)]+min2L[int(min2)]
-        print("It's "+str(hourL[hour])+str(mins)+ampm)
+        if min1=='0' and min2=='0':
+            print("It's "+str(hourL[hour])+ampm)
+        else:
+            print("It's "+str(hourL[hour])+str(mins)+ampm)
             #type input_time: string
             #return type: string
             

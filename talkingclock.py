@@ -35,7 +35,7 @@ class Solution:
         min2=input_time[4]
         if int(hour)>12:
             ampm=" pm"
-            hour=int(hour)-12
+            hour=int(hour)-11
         else:
             ampm=" am"
             hour=int(hour)

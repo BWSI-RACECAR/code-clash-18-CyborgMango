@@ -55,7 +55,9 @@ class Solution:
             mins=min2teenL[int(min2)]
         else:
             mins=min1L[int(min1)]+min2L[int(min2)]
-        print("It's "+str(hourL[hour])+str(mins)+ampm)
+        string=("It's "+str(hourL[hour])+str(mins)+ampm)
+        string.replace("  "," ")
+        print(string)
             #type input_time: string
             #return type: string
             

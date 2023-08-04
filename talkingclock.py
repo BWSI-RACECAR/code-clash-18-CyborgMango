@@ -37,6 +37,7 @@ class Solution:
             ampm=" pm"
         else:
             ampm=" am"
+        hour=int(hour)
         if int(hour)>12:
             hour=int(hour-12)
         if hour==0:

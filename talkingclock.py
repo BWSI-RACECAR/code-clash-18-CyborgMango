@@ -30,7 +30,7 @@ Input: 12:05  Output: It's twelve oh five pm
     # This will convert military hours to regular hours, and determine AM vs PM
 class Solution:    
     def ClockTalker(self, input_time):
-        hour= input_time[0:1]
+        hour= input_time[0:2]
         min1=input_time[3]
         min2=input_time[4]
         if int(hour)>=12:
@@ -46,7 +46,8 @@ class Solution:
         if min1=='0':
             if min2=='0':
                 mins=''
-            mins="oh "+min2L[int(min2)]
+            else:
+                mins="oh "+min2L[int(min2)]
         elif min1=='1':
             mins=min2teenL[int(min2)]
         else:

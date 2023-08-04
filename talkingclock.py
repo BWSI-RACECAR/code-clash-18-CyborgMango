@@ -33,7 +33,7 @@ class Solution:
         hour= input_time[0:2]
         min1=input_time[3]
         min2=input_time[4]
-        if int(hour)>=12:
+        if int(hour)>12:
             ampm=" pm"
             hour=int(hour)-12
         else:

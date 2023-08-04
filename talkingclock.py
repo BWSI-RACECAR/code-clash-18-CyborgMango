@@ -55,10 +55,7 @@ class Solution:
             mins=min2teenL[int(min2)]
         else:
             mins=min1L[int(min1)]+min2L[int(min2)]
-        if min1=='0' and min2=='0':
-            print("It's "+str(hourL[hour])+ampm)
-        else:
-            print("It's "+str(hourL[hour])+str(mins)+ampm)
+        print("It's "+str(hourL[hour])+str(mins)+ampm)
             #type input_time: string
             #return type: string
             
